@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://online-course-portal-b2pg.onrender.com',
+  baseURL: 'https://course-portal-hhlr.onrender.com',
 });
 
 api.interceptors.request.use(
