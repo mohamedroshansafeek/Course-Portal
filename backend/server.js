@@ -13,6 +13,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+//Ping route 
+app.get('/ping', (req, res) => res.send('pong'));
+
 // Routes
 app.use('/', authRoutes);
 app.use('/courses', courseRoutes);
